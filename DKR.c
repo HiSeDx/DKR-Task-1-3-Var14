@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define Txt_IN "txt_in.txt"
+
 void task_1();
 void task_2();
 void task_3();
@@ -162,9 +164,9 @@ void task_3(){
    cnt_arr[i][0] = i;
  }
 
- f_in = fopen("txt_in.txt", "r");
+ f_in = fopen(Txt_IN, "r");
  if ( f_in == NULL ){
-    printf("\nCannot open a file!");
+    printf("\nCannot open an input file!");
     printf("Press any key to exit...");
     getch();
     exit (1);
